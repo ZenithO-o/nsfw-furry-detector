@@ -13,3 +13,9 @@ Using the [ResNet-50](https://arxiv.org/abs/1512.03385) CNN model as the base, t
 This model had an overall accuracy of ~88% when categorizing a random sample of 10k images from e621 (50/50 split of sfw & nsfw). Below is a confusion matrix detailing the results:
 
 ![Confusion matrix describing results. Read as true/predicted score: 0/0 4325, 0/1 675, 1/0 466, 1/1 4554](./images/confusion_matrix.jpg)
+
+## FUTURE PLANS
+
+I currently hate how this is essentially a "yes or no" model and am kicking previous me for making it that way. I would like to make a V2 version that is probabilistic and also accounts for questionable material in the probabilities (also flipping around 0/1 for sfw/nsfw because that was another dumb decision). It would end up being something similar to [0.0, 0.33) for SFW, [0.33, 0.67) for QSFW, and [0.67, 1.0] for NSFW. Because of this 
+
+The approximate timeline is to have this version done by mid Summer, so if you are invested in this, please keep up to date with me! I will give progress updates on my Twitter, [@zenithO_o](https://twitter.com/zenithO_o), and maybe a project video on my YouTube, [@ZenithCoding](https://www.youtube.com/@ZenithCoding). :3
