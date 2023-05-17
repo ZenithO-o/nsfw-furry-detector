@@ -4,7 +4,7 @@ Determines if furry art is NSFW or not using a neural network.
 
 Using the [ResNet-50](https://arxiv.org/abs/1512.03385) CNN model as the base, this model takes in a (384, 384, 3) image as the input and outputs a `0` if the image is NSFW and `1` if SFW.
 
-## Usage:
+## Usage
 
 `run_model.py` shows you how to use the `nsfw_model.tflite` file! It details a sample function for converting an image into a usable format for the model (`img_path_to_input`), a sample function for running tensorflow lite model inferences (`run_interpreter`), and an `if __name__ == '__main__'` block to show how to load the tflite model and example usage of the aforementioned functions. Be sure to check out the official [TensorFlow Lite inference guide](https://www.tensorflow.org/lite/guide/inference) for more support on how the library works.
 
